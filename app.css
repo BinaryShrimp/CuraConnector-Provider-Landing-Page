@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+.container {
+    /* border: 1px dashed black; */
+    margin: 0 auto 50px auto;
+    max-width: 1030px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media only screen and (min-width: 1300px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+.card {
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px lightgray;
+    transition: 0.2s;
+}
+
+.card-image {
+    /* border: 1px dashed black; */
+    text-align: center;
+}
+
+.card-text {
+    /* border: 1px dashed black; */
+    width: 200px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+.card-text p {
+    margin: 0;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 15px lightgray;
+    transform: scale(1.04);
+}
+
+
+
+button {
+    border: 3px solid #005b7f;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #005b7f;
+    background: none;
+    width: 200px;
+    height: 70px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #005b7f;
+    color: white;
+}
+
+
+.green-1{ background: #53ba52; }
+.green-2{ background: #71c067; }
+.green-3{ background: #89c87e; }
+.blue-1{ background: #005b7f; }
+.blue-text{color: #005b7f;}
+.blue-2{ background: #20819f; }
+.blue-3{ background: #41a0b6; }
+
+
+.card-header p{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+    text-align: center;
+    
+}
+.h1z {
+    margin: 0 15px 0 15px;
+    text-align: center;
+}
+.h2z p{
+    margin: 0 30px 0 30px;
+    font-size: 18px;
+}
+.zz p{
+    padding-bottom: 30px;
+}
+
+.header {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #53ba52
+}
+.header p {
+    display: inline;
+    border-bottom: 3px solid #53ba52;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.ele {
+    padding-top: 10px;
+}
