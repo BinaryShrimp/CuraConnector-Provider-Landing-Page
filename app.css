@@ -1,7 +1,147 @@
 * {
     box-sizing: border-box;
+}
+body {
+    margin: 0;
     font-family: roboto;
 }
+
+.green{color: #50BA52}
+.blue{color: #005B7F}
+.hide{display: none;}
+
+/* HEADER */
+.container-header{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    box-shadow: 0 0 10px gray;
+}
+.header-block{
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+#header-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .header-block {
+        width: 90%;
+    }
+    #header-logo img {
+        width: 150px;
+    }
+    #header-text p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+/* JUMBOTRON */
+.container-jumbo{
+    background: url('./Assets/2 - Banner/background.png');
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.jumbo-block{
+    /* border: 1px solid black; */
+    width: 80%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+}
+.jumbo-text-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.jumbo-text{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.jumbo-text span{
+    font-size: 36px;
+}
+.jumbo-text p {
+    font-size: 24px;
+    margin: 3px 0;
+}
+.jumbo-text button {
+    border: 3px solid #005B7F;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 20px;
+    color: #005B7F;
+    height: 70px;
+    width: 200px;
+    transition: 0.2s;
+}
+.jumbo-text button:hover {
+    background: #005B7F;
+    color: white;
+}
+.jumbo-img{
+    display: flex;
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 1000px) {
+    .jumbo-img img {
+        display: none;
+    }
+}
+
+/* @media only screen and (max-width: 1000px) {
+    .jumbo-block {
+        width: 90%;
+    }
+    .jumbo-text span {
+        font-size: 24px;
+    }
+    .jumbo-text h1 {
+        font-size: 24px !important;
+    }
+    .jumbo-text p {
+        font-size: 14px;
+    }
+    .jumbo-text button {
+        font-size: 14px;
+        height: 55px;
+        width: 130px
+    }
+    .jumbo-img {
+        display: flex;
+        align-items: flex-end;
+    }
+    .jumbo-img img {
+        width: 600px
+    }
+} */
+
+
+
+
+
+
+
+
 
 .container {
     /* border: 1px dashed black; */
